@@ -3,6 +3,9 @@ import { Inter } from "next/font/google";
 import "./globals.css"; // Import global styles (like Tailwind CSS)
 import Navbar from "@/components/Navbar"; // Import Navbar component
 import Footer from "@/components/Footer"; // Import Footer component
+import { Provider } from 'react-redux';
+import { store } from './store/store';
+import ProviderWrapper from "@/components/ProviderWrapper";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,9 +25,9 @@ export default function RootLayout({ children }) {
       <body className={`${inter.className} antialiased flex flex-col min-h-screen`}>
         {/* Navbar component */}
         <Navbar />
+        <ProviderWrapper>{children}</ProviderWrapper>
         {/* Main content area - children represent the current page */}
         <main className="flex-grow">
-          {children}
         </main>
         {/* Footer component */}
         <Footer />
