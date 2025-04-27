@@ -28,6 +28,7 @@ export default function RootLayout({ children }) {
         <ProviderWrapper>{children}</ProviderWrapper>
         {/* Main content area - children represent the current page */}
         <main className="flex-grow">
+          {/* {children} we remove the children from here to avoid double rendering  */}
         </main>
         {/* Footer component */}
         <Footer />
