@@ -3,8 +3,6 @@ import { Inter } from "next/font/google";
 import "./globals.css"; // Import global styles (like Tailwind CSS)
 import Navbar from "@/components/Navbar"; // Import Navbar component
 import Footer from "@/components/Footer"; // Import Footer component
-import { Provider } from 'react-redux';
-import { store } from './store/store';
 import ProviderWrapper from "@/components/ProviderWrapper";
 
 const inter = Inter({ subsets: ["latin"] });

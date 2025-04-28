@@ -1,5 +1,6 @@
 // components/Hero.jsx
 // Can be a Server Component as it's likely static content
+'use client';
 import Link from 'next/link';
 
 export default function Hero() {
