@@ -1,5 +1,9 @@
 // app/contact/page.jsx
 // This file creates the /contact route
+'use client';
+
+import TypeIt from "typeit-react";
+
 export default function ContactPage() {
     return (
       <section className="container mx-auto px-4 py-8">

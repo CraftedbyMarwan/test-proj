@@ -2,14 +2,18 @@
 // This is the root page of your application (/)
 'use client';
 import Hero from "@/components/Hero";
-
 import { motion } from "framer-motion"; // Import motion from framer-motion
+import TypeIt from "typeit-react";
 
 export default function Home() { // Corrected export syntax
   return (
       <section className="container mx-auto px-4 py-8">
         {/* Hero component */}
         <Hero />
+
+        <div className="App">
+          <TypeIt className='text-4xl'>Marwan Mohammed</TypeIt>
+        </div>
 
         <motion.div
           className="mt-12 text-center"

@@ -1,4 +1,7 @@
 // app/about/page.jsx
+'use client';
+import { TypeAnimation } from "react-type-animation";
+
 // This file creates the /about route
 export default function AboutPage() {
     return (
